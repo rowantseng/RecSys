@@ -60,3 +60,9 @@ The models are saved to the folder `surprise` and MSE and MAE estimators show as
 |-----|---------|--------|--------|
 | MSE | 0.8645  | 0.8267 | 0.9592 |
 | MAE | 0.7316  | 0.7121 | 0.7623 |
+
+## Content-Based Filtering
+
+In `contentBasedFiltering.ipynb`, description-based recommender and metadata-based recommender are implemented. The description-based recommender first computes similarities between movies using `taglines and overview`. Then, find the most similar movies to a particular movie and make recommendations. On the other hand, The metadata-based recommender compute similarities between movies using `metadata`.
+
+In `hybridContentBasedFiltering.ipynb`, the content-based recommender is combined with the `SVD++` rating predictor to give high rating recommendations based on the particular user.
